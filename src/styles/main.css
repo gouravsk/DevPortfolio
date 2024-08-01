@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+  @apply  md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl mx-auto px-4;
+}
+
+body{
+  @apply bg-[#050505] text-[#f5f5f5];
+}
