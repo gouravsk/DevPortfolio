@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from "react";
 
 const Header = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -12,59 +12,213 @@ const Header = () => {
         <div className="container">
           <div className="flex flex-wrap justify-between items-center -mx-4">
             <div className="w-auto px-4">
-              <a href="/" className="text-2xl font-bold inline-block ease-in-out duration-300 leading-none">
-                DevPortfo<span className="text-orange-500">///</span>o </a>
+              <a
+                href="/"
+                className="text-2xl font-bold inline-block ease-in-out duration-300 leading-none"
+              >
+                DevPortfo<span className="text-orange-500">///</span>o{" "}
+              </a>
             </div>
             <div className="w-auto px-4">
-              <button className={`relative  md:hidden ${isToggled ? '' : 'animate-bounce'}`} onClick={handleChange}>
-                <div className={`relative flex items-center justify-center rounded-full w-[40px] h-[40px] transform transition-all bg-orange-500  ring-orange-500  ring-opacity-30 duration-200 shadow-md ${isToggled ? 'ring-4' : 'ring-0'}`}>
-                  <div className={`flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300  origin-center ${isToggled ? '-rotate-[45deg]' : 'rotate-[unset]'}`}>
-                    <span className={`bg-white  w-1/2 rounded transform transition-all duration-300 group-focus: origin-right delay-75 group-focus: ${isToggled ? '-translate-y-[1px] h-[1px] -rotate-90' : 'h-[2px]'}`}></span>
+              <button
+                className={`relative  md:hidden ${
+                  isToggled ? "" : "animate-bounce"
+                }`}
+                onClick={handleChange}
+              >
+                <div
+                  className={`relative flex items-center justify-center rounded-full w-[40px] h-[40px] transform transition-all bg-orange-500  ring-orange-500  ring-opacity-30 duration-200 shadow-md ${
+                    isToggled ? "ring-4" : "ring-0"
+                  }`}
+                >
+                  <div
+                    className={`flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300  origin-center ${
+                      isToggled ? "-rotate-[45deg]" : "rotate-[unset]"
+                    }`}
+                  >
+                    <span
+                      className={`bg-white  w-1/2 rounded transform transition-all duration-300 group-focus: origin-right delay-75 group-focus: ${
+                        isToggled
+                          ? "-translate-y-[1px] h-[1px] -rotate-90"
+                          : "h-[2px]"
+                      }`}
+                    ></span>
                     <span className="bg-white h-[1px] rounded"></span>
-                    <span className={`bg-white w-1/2 rounded self-end transform transition-all duration-300 origin-left delay-75 ${isToggled ? '-translate-y-[1px] h-[1px] -rotate-90' : 'h-[2px]'} `}></span>
+                    <span
+                      className={`bg-white w-1/2 rounded self-end transform transition-all duration-300 origin-left delay-75 ${
+                        isToggled
+                          ? "-translate-y-[1px] h-[1px] -rotate-90"
+                          : "h-[2px]"
+                      } `}
+                    ></span>
                   </div>
                 </div>
               </button>
-              <div id="main-navigation" className={`max-[767px]:flex max-[767px]:fixed max-[767px]:top-[95px] max-[767px]:left-0 transform transition-all  max-[767px]:z-[99] max-[767px]:w-full max-[767px]:h-[calc(100%-95px)]`}>
-                <div className={`w-[30%] flex  md:hidden justify-center p-6 bg-orange-100 max-[767px]:h-full max-[767px]:absolute max-[767px]:top-0 max-[767px]:transform max-[767px]:transition-all max-[767px]:duration-[0.6s]  ${isToggled ? 'max-[767px]:left-0':'max-[767px]:-left-[100%]'}`}>
+              <div
+                id="main-navigation"
+                className={`max-[767px]:flex max-[767px]:fixed max-[767px]:top-[95px] max-[767px]:left-0 transform transition-all  max-[767px]:z-[99] max-[767px]:w-full max-[767px]:h-[calc(100%-95px)]`}
+              >
+                <div
+                  className={`w-[30%] flex  md:hidden justify-center p-6 bg-orange-100 max-[767px]:h-full max-[767px]:absolute max-[767px]:top-0 max-[767px]:transform max-[767px]:transition-all max-[767px]:duration-[0.6s]  ${
+                    isToggled
+                      ? "max-[767px]:left-0"
+                      : "max-[767px]:-left-[100%]"
+                  }`}
+                >
                   <div className="w-full h-full overflow-y-auto">
-                    <ul className='flex flex-col items-center'>
-                      <li className={`w-[44px] h-[44px] mb-4 relative transform transition-all duration-[0.4s] ${isToggled ? 'max-[767px]:left-0 delay-[0.2s]' : 'max-[767px]:-left-[100%]'}`}>
-                        <a href="#"><svg viewBox="0 0 512 512"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z" />
-                        </svg></a>
+                    <ul className="flex flex-col items-center">
+                      <li
+                        className={`w-[38px] h-[38px] mb-4 relative transform transition-all duration-[0.4s] ${
+                          isToggled
+                            ? "max-[767px]:left-0 delay-[0.2s]"
+                            : "max-[767px]:-left-[100%]"
+                        }`}
+                      >
+                        <a href="#">
+                          <svg viewBox="0 0 50 50">
+                            <path d="M 25.996094 48 C 13.3125 48 2.992188 37.683594 2.992188 25 C 2.992188 12.316406 13.3125 2 25.996094 2 C 31.742188 2 37.242188 4.128906 41.488281 7.996094 L 42.261719 8.703125 L 34.675781 16.289063 L 33.972656 15.6875 C 31.746094 13.78125 28.914063 12.730469 25.996094 12.730469 C 19.230469 12.730469 13.722656 18.234375 13.722656 25 C 13.722656 31.765625 19.230469 37.269531 25.996094 37.269531 C 30.875 37.269531 34.730469 34.777344 36.546875 30.53125 L 24.996094 30.53125 L 24.996094 20.175781 L 47.546875 20.207031 L 47.714844 21 C 48.890625 26.582031 47.949219 34.792969 43.183594 40.667969 C 39.238281 45.53125 33.457031 48 25.996094 48 Z"></path>
+                          </svg>
+                        </a>
                       </li>
-                      <li className={`w-[44px] h-[44px] mb-4 relative transform transition-all duration-[0.4s] ${isToggled ? 'max-[767px]:left-0 delay-[0.25s]' : 'max-[767px]:-left-[100%]'}`}>
-                        <a href="#"> <svg viewBox="0 0 512 512"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z" /></svg></a>
+                      <li
+                        className={`w-[38px] h-[38px] mb-4 relative transform transition-all duration-[0.4s] ${
+                          isToggled
+                            ? "max-[767px]:left-0 delay-[0.25s]"
+                            : "max-[767px]:-left-[100%]"
+                        }`}
+                      >
+                        <a href="#">
+                          {" "}
+                          <svg viewBox="0 0 50 50">
+                            <path d="M 8 3.0097656 C 4.53 3.0097656 2.0097656 5.0892187 2.0097656 7.9492188 C 2.0097656 10.819219 4.59 12.990234 8 12.990234 C 11.47 12.990234 13.990234 10.870625 13.990234 7.890625 C 13.830234 5.020625 11.36 3.0097656 8 3.0097656 z M 3 15 C 2.45 15 2 15.45 2 16 L 2 45 C 2 45.55 2.45 46 3 46 L 13 46 C 13.55 46 14 45.55 14 45 L 14 16 C 14 15.45 13.55 15 13 15 L 3 15 z M 18 15 C 17.45 15 17 15.45 17 16 L 17 45 C 17 45.55 17.45 46 18 46 L 27 46 C 27.552 46 28 45.552 28 45 L 28 30 L 28 29.75 L 28 29.5 C 28 27.13 29.820625 25.199531 32.140625 25.019531 C 32.260625 24.999531 32.38 25 32.5 25 C 32.62 25 32.739375 24.999531 32.859375 25.019531 C 35.179375 25.199531 37 27.13 37 29.5 L 37 45 C 37 45.552 37.448 46 38 46 L 47 46 C 47.55 46 48 45.55 48 45 L 48 28 C 48 21.53 44.529063 15 36.789062 15 C 33.269062 15 30.61 16.360234 29 17.490234 L 29 16 C 29 15.45 28.55 15 28 15 L 18 15 z"></path>
+                          </svg>
+                        </a>
                       </li>
-                      <li className={`w-[44px] h-[44px] mb-4 relative transform transition-all duration-[0.4s] ${isToggled ? 'max-[767px]:left-0 delay-[0.3s]' : 'max-[767px]:-left-[100%]'}`}>
-                        <a href="#"> <svg viewBox="0 0 512 512"><g><path d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z" /><path d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z" /><circle cx="351.5" cy="160.5" r="21.5" /></g></svg></a>
+                      <li
+                        className={`w-[38px] h-[38px] mb-4 relative transform transition-all duration-[0.4s] ${
+                          isToggled
+                            ? "max-[767px]:left-0 delay-[0.3s]"
+                            : "max-[767px]:-left-[100%]"
+                        }`}
+                      >
+                        <a href="#">
+                          {" "}
+                          <svg viewBox="0 0 48 48">
+                            <path d="M44,24c0,8.96-5.88,16.54-14,19.08V38c0-1.71-0.72-3.24-1.86-4.34c5.24-0.95,7.86-4,7.86-9.66c0-2.45-0.5-4.39-1.48-5.9 c0.44-1.71,0.7-4.14-0.52-6.1c-2.36,0-4.01,1.39-4.98,2.53C27.57,14.18,25.9,14,24,14c-1.8,0-3.46,0.2-4.94,0.61 C18.1,13.46,16.42,12,14,12c-1.42,2.28-0.84,4.74-0.3,6.12C12.62,19.63,12,21.57,12,24c0,5.66,2.62,8.71,7.86,9.66 c-0.67,0.65-1.19,1.44-1.51,2.34H16c-1.44,0-2-0.64-2.77-1.68c-0.77-1.04-1.6-1.74-2.59-2.03c-0.53-0.06-0.89,0.37-0.42,0.75 c1.57,1.13,1.68,2.98,2.31,4.19C13.1,38.32,14.28,39,15.61,39H18v4.08C9.88,40.54,4,32.96,4,24C4,12.95,12.95,4,24,4 S44,12.95,44,24z"></path>
+                          </svg>
+                        </a>
                       </li>
                     </ul>
                   </div>
-
                 </div>
-                <div className={`max-[767px]:w-[70%] max-[767px]:p-6 max-[767px]:bg-orange-500 max-[767px]:h-full max-[767px]:absolute max-[767px]:top-0 max-[767px]:transform max-[767px]:transition-all max-[767px]:duration-[0.6s]  ${isToggled ? 'max-[767px]:right-0':'max-[767px]:-right-[100%]'}`}>
+                <div
+                  className={`max-[767px]:w-[70%] max-[767px]:p-6 max-[767px]:bg-orange-500 max-[767px]:h-full max-[767px]:absolute max-[767px]:top-0 max-[767px]:transform max-[767px]:transition-all max-[767px]:duration-[0.6s]  ${
+                    isToggled
+                      ? "max-[767px]:right-0"
+                      : "max-[767px]:-right-[100%]"
+                  }`}
+                >
                   <div className="h-full overflow-y-auto">
                     <ul className="flex flex-wrap flex-col md:flex-row">
-                      <li className={`group h-6 relative overflow-y-hidden mb-4 md:me-8 transform transition-all duration-[0.4s]  ${isToggled ? 'max-[767px]:left-0 delay-[0.2s]' : 'max-[767px]:-left-[100%]'}`}>
-                        <a className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500" href="/">Home</a>
-                        <a className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500" href="/">Home</a>
+                      <li
+                        className={`group h-6 relative overflow-y-hidden mb-4 md:me-8 transform transition-all duration-[0.4s]  ${
+                          isToggled
+                            ? "max-[767px]:left-0 delay-[0.2s]"
+                            : "max-[767px]:-left-[100%]"
+                        }`}
+                      >
+                        <a
+                          className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500"
+                          href="/"
+                        >
+                          Home
+                        </a>
+                        <a
+                          className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500"
+                          href="/"
+                        >
+                          Home
+                        </a>
                       </li>
-                      <li className={`group h-6 relative overflow-y-hidden mb-4 md:me-8 transform transition-all duration-[0.4s] ${isToggled ? 'max-[767px]:left-0 delay-[0.25s]' : 'max-[767px]:-left-[100%]'}`}>
-                        <a className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500" href="/">About</a>
-                        <a className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500" href="/">About</a>
+                      <li
+                        className={`group h-6 relative overflow-y-hidden mb-4 md:me-8 transform transition-all duration-[0.4s] ${
+                          isToggled
+                            ? "max-[767px]:left-0 delay-[0.25s]"
+                            : "max-[767px]:-left-[100%]"
+                        }`}
+                      >
+                        <a
+                          className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500"
+                          href="/"
+                        >
+                          About
+                        </a>
+                        <a
+                          className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500"
+                          href="/"
+                        >
+                          About
+                        </a>
                       </li>
-                      <li className={`group h-6 relative overflow-y-hidden mb-4 md:me-8 transform transition-all duration-[0.4s] ${isToggled ? 'max-[767px]:left-0 delay-[0.3s]' : 'max-[767px]:-left-[100%]'}`}>
-                        <a className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500" href="/">Tech Stack</a>
-                        <a className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500" href="/">Tech Stack</a>
+                      <li
+                        className={`group h-6 relative overflow-y-hidden mb-4 md:me-8 transform transition-all duration-[0.4s] ${
+                          isToggled
+                            ? "max-[767px]:left-0 delay-[0.3s]"
+                            : "max-[767px]:-left-[100%]"
+                        }`}
+                      >
+                        <a
+                          className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500"
+                          href="/"
+                        >
+                          Tech Stack
+                        </a>
+                        <a
+                          className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500"
+                          href="/"
+                        >
+                          Tech Stack
+                        </a>
                       </li>
-                      <li className={`group h-6 relative overflow-y-hidden mb-4 md:me-8 transform transition-all duration-[0.4s] ${isToggled ? 'max-[767px]:left-0 delay-[0.35s]' : 'max-[767px]:-left-[100%]'}`}>
-                        <a className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500" href="/">Projects</a>
-                        <a className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500" href="/">Projects</a>
+                      <li
+                        className={`group h-6 relative overflow-y-hidden mb-4 md:me-8 transform transition-all duration-[0.4s] ${
+                          isToggled
+                            ? "max-[767px]:left-0 delay-[0.35s]"
+                            : "max-[767px]:-left-[100%]"
+                        }`}
+                      >
+                        <a
+                          className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500"
+                          href="/"
+                        >
+                          Projects
+                        </a>
+                        <a
+                          className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500"
+                          href="/"
+                        >
+                          Projects
+                        </a>
                       </li>
-                      <li className={`group h-6 relative overflow-y-hidden mb-4 md:me-8  md:last:me-0 last:mb-0 transform transition-all duration-[0.4s] ${isToggled ? 'max-[767px]:left-0 delay-[0.4s]' : 'max-[767px]:-left-[100%]'}`}>
-                        <a className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500" href="/">Contact</a>
-                        <a className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500" href="/">Contact</a>
+                      <li
+                        className={`group h-6 relative overflow-y-hidden mb-4 md:me-8  md:last:me-0 last:mb-0 transform transition-all duration-[0.4s] ${
+                          isToggled
+                            ? "max-[767px]:left-0 delay-[0.4s]"
+                            : "max-[767px]:-left-[100%]"
+                        }`}
+                      >
+                        <a
+                          className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500"
+                          href="/"
+                        >
+                          Contact
+                        </a>
+                        <a
+                          className="block ease-in-out duration-300 lg:text-lg font-bold group-hover:-translate-y-[28px] md:group-hover:text-orange-500"
+                          href="/"
+                        >
+                          Contact
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -75,7 +229,7 @@ const Header = () => {
         </div>
       </header>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
