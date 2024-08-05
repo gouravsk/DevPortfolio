@@ -56,7 +56,9 @@ const Header = () => {
               </button>
               <div
                 id="main-navigation"
-                className={`max-[767px]:flex max-[767px]:fixed max-[767px]:top-[95px] max-[767px]:left-0 transform transition-all  max-[767px]:z-[99] max-[767px]:w-full max-[767px]:h-[calc(100%-95px)]`}
+                className={`max-[767px]:flex max-[767px]:fixed max-[767px]:top-[95px] max-[767px]:left-0 transform transition-all   max-[767px]:w-full max-[767px]:h-[calc(100%-95px)] ${
+                  isToggled ? "max-[767px]:z-[99]" : ""
+                }`}
               >
                 <div
                   className={`w-[30%] flex  md:hidden justify-center p-6 bg-orange-100 max-[767px]:h-full max-[767px]:absolute max-[767px]:top-0 max-[767px]:transform max-[767px]:transition-all max-[767px]:duration-[0.6s]  ${
