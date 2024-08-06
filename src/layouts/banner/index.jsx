@@ -1,6 +1,12 @@
+import RandomBoxShadows from "../../components/defalt/bgStars";
+
 const Banner = () => {
   return (
-    <div className="py-10 lg:py-20 relative">
+    <div className="py-10 lg:py-20 relative overflow-hidden">
+      <RandomBoxShadows count={700}></RandomBoxShadows>
+      <RandomBoxShadows count={200}></RandomBoxShadows>
+      <RandomBoxShadows count={100}></RandomBoxShadows>
+
       <div className="container">
         <div className="flex justify-center -mx-4">
           <div className="lg:w-2/3 px-4 text-center">
