@@ -39,7 +39,7 @@ body {
 
 /*cursor*/
 .circle {
-  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-orange-500 text-white rounded-full duration-500;
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 bg-orange-500 text-white rounded-full duration-100;
 
   &:hover {
     @apply cursor-pointer;
